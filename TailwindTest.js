@@ -1,6 +1,5 @@
 import React from 'react';
 import {View, Text, SafeAreaView, TouchableOpacity} from 'react-native';
-import tailwind from 'tailwind-rn';
 import tw from 'twrnc';
 import {
   BadgeCheckIcon,
@@ -57,9 +56,9 @@ export default function TailwindTest() {
         <View style={tw`mt-5`}>
           <TouchableOpacity>
             <View
-              style={tailwind(
-                'items-center justify-center px-4 py-2 border border-transparent font-medium rounded-md text-red-700 bg-red-100 text-sm',
-              )}>
+              style={tw`
+                items-center justify-center px-4 py-2 border border-transparent font-medium rounded-md text-red-700 bg-red-100 text-sm
+              `}>
               <Text style={tw`text-red-700`}>Delete account</Text>
             </View>
           </TouchableOpacity>
